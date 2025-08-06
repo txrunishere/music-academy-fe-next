@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { BackgroundGradient } from "./ui/background-gradient";
 import { TopGradient, SimpleLiftUpButton } from "./ui/Buttons";
-import { courses } from "@/data/courses.json";
+import courses from "@/data/courses.json";
 
 export default function FeaturedCourses() {
-  const featuredCourses = courses.filter((course) => course.isFeatured);
+  const featuredCourses = courses.courses.filter((course) => course.isFeatured);
 
   return (
     <section className="bg-gradient-to-b from-gray-900 py-12">

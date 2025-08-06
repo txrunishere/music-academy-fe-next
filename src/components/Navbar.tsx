@@ -9,7 +9,7 @@ const Navbar: FC<{ className?: string }> = ({ className }) => {
 
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-xl mx-auto z-50", className)}
+      className={cn("fixed top-10 inset-x-0 max-w-md mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
         <Link href={"/"}>
